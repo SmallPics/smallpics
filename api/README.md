@@ -141,7 +141,7 @@ To zoom into a focal point, add a zoom factor between 1.0 and 100.0. Example: `c
 
 ## `flip` - Flip
 
-Flips the image vertically (`v`), horizontally (`h`), or both.
+Flips the image vertically (`v`), horizontally (`h`), or `both`.
 
 ```html
 <img src="bird.jpg?h=500&flip=v">
