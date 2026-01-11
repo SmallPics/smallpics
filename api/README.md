@@ -317,7 +317,7 @@ Rotates the image. Accepts: `auto`, `0`, `90`, `180`, `270`. Default: `auto` (us
 
 ## `q` - Quality
 
-Sets output quality (0–100). Default: `90`. Applies to `jpg`, `pjpg`, `webp`, `avif`, and `heic`.
+Sets output quality (0–100). Default: `90`. Applies to `jpg`, `pjpg`, `webp` and `avif`.
 
 ```html
 <img src="bird.jpg?w=500&q=25">
