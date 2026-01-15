@@ -228,7 +228,7 @@ Defines how the watermark scales to its size constraints.
 * `max`: Fits within bounds without enlarging smaller images.
 * `fill`: Fits without cropping; fills gaps with background color.
 * `stretch`: Forces to dimensions, ignoring aspect ratio.
-* `crop`: Crops to fill, preserving aspect ratio. See [crop](#fit---fit).
+* `cover`: Resizes to fill, preserving aspect ratio. See [crop](#fit---fit).
 * `crop-x%-y%`: Crops around focal point. See [crop](#fit---fit).
 
 ```html
