@@ -76,7 +76,7 @@ Maps to `fit=cover-<value>`
 |------------------|---------------------|
 | `clip` (default) | `contain` (default) |
 | `max`            | `max`               |
-| `crop`           | `crop`              |
+| `crop`           | `cover`             |
 | `scale`          | `stretch`           |
 
 ### `gam` (gamma) mapping
