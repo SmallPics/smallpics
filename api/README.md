@@ -151,7 +151,7 @@ Flips the image vertically (`v`), horizontally (`h`), or `both`.
 
 ## `fm` - Format
 
-Forces output to a specific format: `avif`, `webp`, `jpg`, `pjpg`, `png` or `gif`. Default: `avif`.
+Forces output to a specific format: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif` or `jxl`. Default: `avif`.
 
 ```html
 <img src="bird.jpg?w=500&fm=gif">

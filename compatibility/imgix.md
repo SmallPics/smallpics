@@ -11,11 +11,11 @@ Enable the Imgix compatibility for any of your configured image origins which mi
 | `pad`        | `border`    | ✅         | Maps to `border=<pad>,<bg>,shrink`. If bg isn't set, then the background is transparent. |
 | `bri`        | `bri`       | ✅         |                                                                                          |
 | `con`        | `con`       | ✅         |                                                                                          |
-| `crop`       | `fit`       | 🟠        | See mapping table below.                                                                                  |
+| `crop`       | `fit`       | 🟠        | See mapping table below.                                                                 |
 | `dpr`        | `dpr`       | ✅         | Small Pics max is 8, Imgix max is 5.                                                     |
 | `fit`        | `fit`       | ✅         | See mapping table below.                                                                 |
 | `flip`       | `flip`      | ✅         | `hv` in Imgix is mapped to `both` in Small Pics                                          |
-| `fm`         | `fm`        | 🟠        | Small Pics supports: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif`.                        |
+| `fm`         | `fm`        | 🟠        | Small Pics supports: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif`, `jxl`.                  |
 | `gam`        | `gam`       | ✅         | See gamma value mapping below.                                                           |
 | `h`          | `h`         | 🟠        | Small Pics doesn't yet have support for relative sizes.                                  |
 | `mark`       | `mark`      | 🟠        | Small Pics only supports relative URLs. Images can be in different origins.              |
