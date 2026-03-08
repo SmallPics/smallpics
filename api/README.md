@@ -229,6 +229,8 @@ Defines how the watermark scales to its size constraints.
 * `fill`: Fits without cropping; fills gaps with background color.
 * `stretch`: Forces to dimensions, ignoring aspect ratio.
 * `cover`: Resizes to fill, preserving aspect ratio. See [crop](#fit---fit).
+* `entropy`: Crops to fit based on entropy measures.
+* `attention`: Crops to a feature most likely to draw human attention.
 * `crop-x%-y%`: Crops around focal point. See [crop](#fit---fit).
 
 ```html
