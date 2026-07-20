@@ -6,6 +6,20 @@ An optional hash used to verify that the transform URL hasn’t been modified.
 
 Only needed when signed transforms are enabled for your image source.
 
+## `ar` - Aspect ratio
+
+Sets the output aspect ratio. Use with a width or height to calculate the missing dimension, or with `fit=cover`/`fit=crop` to crop to the requested ratio.
+
+Accepts either `width:height` or a decimal ratio. For example: `ar=16:9` or `ar=3.1667`.
+
+Aspect ratio requires a cropping fit mode. If `ar` is supplied with any `fit` value other than `cover`, `cover-*`, or `crop-x%-y%`, Small Pics uses `fit=cover`.
+
+```html
+<img src="bird.jpg?w=500&ar=16:9&fit=cover">
+```
+
+[![](https://demo.smallpics.io/bird.jpg?w=500\&ar=16:9\&fit=cover)](https://demo.smallpics.io/bird.jpg?w=500&ar=16:9&fit=cover)
+
 ## `bg` - Background color
 
 Defines the image’s background color. See [colors](#colors) for all supported formats.

@@ -6,6 +6,7 @@ Enable the Imgix compatibility for any of your configured image origins which mi
 
 | Imgix        | Small Pics  | Supported | Notes                                                                                    |
 |--------------|-------------|-----------|------------------------------------------------------------------------------------------|
+| `ar`         | `ar`        | ✅         | Accepts `width:height` or decimal ratios, for example `16:9` or `3.1667`.                 |
 | `bg`         | `bg`        | ✅         |                                                                                          |
 | `border`     | `border`    | ✅         |                                                                                          |
 | `pad`        | `border`    | ✅         | Maps to `border=<pad>,<bg>,shrink`. If bg isn't set, then the background is transparent. |
