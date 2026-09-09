@@ -18,7 +18,7 @@ Accepts either `width:height` or a decimal ratio. For example: `ar=16:9` or `ar=
 <img src="bird.jpg?w=500&ar=16:9&fit=crop">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&ar=16:9&fit=crop)](https://demo.smallpics.io/bird.jpg?w=500&ar=16:9&fit=crop)
+[![](https://media.smallpics.io/bird.jpg?w=500&ar=16:9&fit=crop)](https://media.smallpics.io/bird.jpg?w=500&ar=16:9&fit=crop)
 
 ## `bg` - Background color
 
@@ -28,7 +28,7 @@ Defines the image’s background color. See [colors](#colors) for all supported 
 <img src="logo.svg?w=500&bg=lavender">
 ```
 
-[![](https://demo.smallpics.io/logo.svg?w=500&bg=lavender)](https://demo.smallpics.io/logo.svg?w=500&bg=lavender)
+[![](https://media.smallpics.io/logo.svg?w=500&bg=lavender)](https://media.smallpics.io/logo.svg?w=500&bg=lavender)
 
 ## `border` - Border
 
@@ -38,7 +38,7 @@ Applies a border around the image. Format: `width,color,method`.
 <img src="bird.jpg?w=500&border=10,ff4d4d,overlay">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&border=10,ff4d4d,overlay)](https://demo.smallpics.io/bird.jpg?w=500&border=10,ff4d4d,overlay)
+[![](https://media.smallpics.io/bird.jpg?w=500&border=10,ff4d4d,overlay)](https://media.smallpics.io/bird.jpg?w=500&border=10,ff4d4d,overlay)
 
 ### Width
 
@@ -60,7 +60,7 @@ Determines how the border is applied. Options:
 <img src="bird.jpg?w=500&border=10,ff4d4d,overlay">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&border=25,ff4d4d,overlay)](https://demo.smallpics.io/bird.jpg?w=500&border=10,ff4d4d,expand)
+[![](https://media.smallpics.io/bird.jpg?w=500&border=25,ff4d4d,overlay)](https://media.smallpics.io/bird.jpg?w=500&border=10,ff4d4d,expand)
 
 ## `bri` - Brightness
 
@@ -70,7 +70,7 @@ Controls brightness from `-100` (darker) to `+100` (brighter). `0` means no chan
 <img src="bird.jpg?w=500&bri=-25">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&bri=-25)](https://demo.smallpics.io/bird.jpg?w=500&bri=-25)
+[![](https://media.smallpics.io/bird.jpg?w=500&bri=-25)](https://media.smallpics.io/bird.jpg?w=500&bri=-25)
 
 ## `con` - Contrast
 
@@ -80,7 +80,7 @@ Controls contrast from `-100` (less) to `+100` (more). `0` leaves contrast uncha
 <img src="bird.jpg?w=500&con=25">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&con=25)](https://demo.smallpics.io/bird.jpg?w=500&con=25)
+[![](https://media.smallpics.io/bird.jpg?w=500&con=25)](https://media.smallpics.io/bird.jpg?w=500&con=25)
 
 ## `crop` - Crop
 
@@ -96,7 +96,7 @@ If `fp` is set, it overrides the named position.
 <img src="bird.jpg?w=500&h=500&fit=crop&crop=top-left">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=top-left)](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=top-left)
+[![](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=top-left)](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=top-left)
 
 `fit=crop-top-left`, `fit=crop-top`, and the other named fit positions are deprecated. Use `fit=crop` with the `crop` parameter instead, `fit=crop&crop=top`.
 
@@ -109,18 +109,18 @@ Optionally, use [face](#face---face-index) to choose a face.
 With face detection:
 
 ```html
-<img src="https://demo.smallpics.io/street-portrait.jpg?fit=crop&crop=face&h=800&w=800&zoom=5">
+<img src="https://media.smallpics.io/street-portrait.jpg?fit=crop&crop=face&h=800&w=800&zoom=5">
 ```
 
-[![](https://demo.smallpics.io/street-portrait.jpg?fit=crop&crop=face&h=800&w=800&zoom=5)](https://demo.smallpics.io/street-portrait.jpg?fit=crop&crop=face&h=800&w=800&zoom=5)
+[![](https://media.smallpics.io/street-portrait.jpg?fit=crop&crop=face&h=800&w=800&zoom=5)](https://media.smallpics.io/street-portrait.jpg?fit=crop&crop=face&h=800&w=800&zoom=5)
 
 Without face detection:
 
 ```html
-<img src="https://demo.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=5">
+<img src="https://media.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=5">
 ```
 
-[![](https://demo.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=5)](https://demo.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=5)
+[![](https://media.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=5)](https://media.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=5)
 
 #### No-face fallback
 
@@ -130,7 +130,7 @@ When no matching face is found, `crop=face` uses the image center.
 <img src="bird.jpg?w=500&h=500&fit=crop&crop=face">
 ```
 
-[![No face found: default centered crop](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=face)](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=face)
+[![No face found: default centered crop](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=face)](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=face)
 
 #### Setting the fallback
 
@@ -140,7 +140,7 @@ Add a named position after a comma, such as `crop=face,top-left`. With no matchi
 <img src="bird.jpg?w=500&h=500&fit=crop&crop=face,top-left&zoom=2.5">
 ```
 
-[![No face found: top-left fallback](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=face,top-left&zoom=2.5)](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=face,top-left&zoom=2.5)
+[![No face found: top-left fallback](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=face,top-left&zoom=2.5)](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=face,top-left&zoom=2.5)
 
 ### All-face position
 
@@ -149,10 +149,10 @@ Use `fit=crop&crop=facesarea` to center the crop on the box around all detected 
 Add a named fallback with `crop=facesarea,top-left`. With no fallback, it uses the image center when no faces are found.
 
 ```html
-<img src="https://demo.smallpics.io/group-of-people.jpg?w=500&h=500&fit=crop&crop=facesarea">
+<img src="https://media.smallpics.io/group-of-people.jpg?w=500&h=500&fit=crop&crop=facesarea">
 ```
 
-[![](https://demo.smallpics.io/group-of-people.jpg?w=500&h=500&fit=crop&crop=facesarea)](https://demo.smallpics.io/group-of-people.jpg?w=500&h=500&fit=crop&crop=facesarea)
+[![](https://media.smallpics.io/group-of-people.jpg?w=500&h=500&fit=crop&crop=facesarea)](https://media.smallpics.io/group-of-people.jpg?w=500&h=500&fit=crop&crop=facesarea)
 
 ### Rectangle
 
@@ -162,7 +162,7 @@ Use `width,height,x,y` to extract a rectangle before resizing.
 <img src="bird.jpg?crop=100,100,915,155">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?crop=750,750,1500,600)](https://demo.smallpics.io/bird.jpg?crop=750,750,1500,600)
+[![](https://media.smallpics.io/bird.jpg?crop=750,750,1500,600)](https://media.smallpics.io/bird.jpg?crop=750,750,1500,600)
 
 ## `debug` - Visual debugging
 
@@ -171,10 +171,10 @@ Set `debug=1` to enable visual debugging.
 With `crop=face`, `crop=facesarea`, `zoom=face`, or `zoom=facesarea`, red rectangles mark detected faces and show their indexes.
 
 ```html
-<img src="https://demo.smallpics.io/group-of-people.jpg?w=1024&h=1024&fit=crop&crop=face&debug=1">
+<img src="https://media.smallpics.io/group-of-people.jpg?w=1024&h=1024&fit=crop&crop=face&debug=1">
 ```
 
-[![](https://demo.smallpics.io/group-of-people.jpg?w=1024&h=1024&fit=crop&crop=face&debug=1)](https://demo.smallpics.io/group-of-people.jpg?w=1024&h=1024&fit=crop&crop=face&debug=1)
+[![](https://media.smallpics.io/group-of-people.jpg?w=1024&h=1024&fit=crop&crop=face&debug=1)](https://media.smallpics.io/group-of-people.jpg?w=1024&h=1024&fit=crop&crop=face&debug=1)
 
 ## `dpr` - Device Pixel Ratio
 
@@ -184,7 +184,7 @@ Adjusts rendering for different device pixel densities (e.g. Retina displays). R
 <img src="bird.jpg?w=500&dpr=2">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&dpr=2)](https://demo.smallpics.io/bird.jpg?w=500&dpr=2)
+[![](https://media.smallpics.io/bird.jpg?w=500&dpr=2)](https://media.smallpics.io/bird.jpg?w=500&dpr=2)
 
 ## `face` - Face index
 
@@ -195,10 +195,10 @@ Use with `crop=face` or `zoom=face`. If the selected face is missing, their fall
 `crop=facesarea` and `zoom=facesarea` ignore this index and use all detected faces.
 
 ```html
-<img src="https://demo.smallpics.io/group-of-people.jpg?zoom=face&face=1&h=800&w=800">
+<img src="https://media.smallpics.io/group-of-people.jpg?zoom=face&face=1&h=800&w=800">
 ```
 
-[![](https://demo.smallpics.io/group-of-people.jpg?zoom=face&face=2&h=800&w=800&zoompad=3p)](https://demo.smallpics.io/group-of-people.jpg?zoom=face&face=2&h=800&w=800&zoompad=3p)
+[![](https://media.smallpics.io/group-of-people.jpg?zoom=face&face=2&h=800&w=800&zoompad=3p)](https://media.smallpics.io/group-of-people.jpg?zoom=face&face=2&h=800&w=800&zoompad=3p)
 
 See the [no-face fallback examples](#no-face-fallback) for images without faces.
 
@@ -223,7 +223,7 @@ Crops to fill both width and height while maintaining aspect ratio.
 <img src="bird.jpg?w=500&h=500&fit=crop">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop)](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop)
+[![](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop)](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop)
 
 Use [crop](#crop---crop) to choose the crop position.
 
@@ -235,7 +235,7 @@ Use `fit=crop` with [fp](#fp---focal-point) to crop around a point in the image.
 <img src="bird.jpg?w=500&h=500&fit=crop&fp=45w:25h">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&fp=45w:25h)](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&fp=45w:25h)
+[![](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&fp=45w:25h)](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&fp=45w:25h)
 
 `fit=crop-45-35` syntax is deprecated. Use `fit=crop&fp=45p:35p` instead.
 
@@ -249,7 +249,7 @@ Flips the image vertically (`v`), horizontally (`h`), or `both`.
 <img src="bird.jpg?h=500&flip=v">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?h=500&flip=v)](https://demo.smallpics.io/bird.jpg?h=500&flip=v)
+[![](https://media.smallpics.io/bird.jpg?h=500&flip=v)](https://media.smallpics.io/bird.jpg?h=500&flip=v)
 
 ## `fm` - Format
 
@@ -259,7 +259,7 @@ Forces output to a specific format: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif` 
 <img src="bird.jpg?w=500&fm=gif">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&fm=gif)](https://demo.smallpics.io/bird.jpg?w=500&fm=gif)
+[![](https://media.smallpics.io/bird.jpg?w=500&fm=gif)](https://media.smallpics.io/bird.jpg?w=500&fm=gif)
 
 ## `fp` - Focal point
 
@@ -281,7 +281,7 @@ Coordinates use the image after orientation, flip, and crop are applied. Points 
 <img src="bird.jpg?w=500&h=500&fit=crop&fp=10p:10p">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&fp=10p:10p)](https://demo.smallpics.io/bird.jpg?w=500&h=500&fit=crop&fp=10p:10p)
+[![](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&fp=10p:10p)](https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&fp=10p:10p)
 
 ## `gam` - Gamma
 
@@ -291,7 +291,7 @@ Adjusts gamma levels between `0.1` and `9.99`.
 <img src="bird.jpg?w=500&gam=1.5">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&gam=1.5)](https://demo.smallpics.io/bird.jpg?w=500&gam=1.5)
+[![](https://media.smallpics.io/bird.jpg?w=500&gam=1.5)](https://media.smallpics.io/bird.jpg?w=500&gam=1.5)
 
 ## `h` - Height
 
@@ -301,7 +301,7 @@ Sets image height in pixels or [relative dimensions](#relative-dimensions). `h=6
 <img src="bird.jpg?h=500">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?h=500)](https://demo.smallpics.io/bird.jpg?h=500)
+[![](https://media.smallpics.io/bird.jpg?h=500)](https://media.smallpics.io/bird.jpg?h=500)
 
 ## `interlace` - Interlace
 
@@ -320,7 +320,7 @@ Defines whether the image loads progressively. Improves perceived loading speed 
 <img src="bird.jpg?interlace=1">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&interlace=1)](https://demo.smallpics.io/bird.jpg?w=500&interlace=1)
+[![](https://media.smallpics.io/bird.jpg?w=500&interlace=1)](https://media.smallpics.io/bird.jpg?w=500&interlace=1)
 
 ## `mark` - Watermark
 
@@ -330,7 +330,7 @@ Adds a watermark image from your configured watermarks directory.
 <img src="bird.jpg?mark=logo.svg">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=10w&markpad=3w&markpos=bottom-right)](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=10w&markpad=3w&markpos=bottom-right)
+[![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=10w&markpad=3w&markpos=bottom-right)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=10w&markpad=3w&markpos=bottom-right)
 
 ## `markalpha` - Watermark opacity
 
@@ -340,7 +340,7 @@ Controls watermark transparency (0–100). `100` = fully opaque, `0` = fully tra
 <img src="bird.jpg?mark=logo.svg&markalpha=35">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=40w&markpad=3w&markpos=center&markalpha=35)](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=40w&markpad=3w&markpos=center&markalpha=35)
+[![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=40w&markpad=3w&markpos=center&markalpha=35)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=40w&markpad=3w&markpos=center&markalpha=35)
 
 ## `markfit` - Watermark fit
 
@@ -360,7 +360,7 @@ Defines how the watermark scales to its size constraints.
 <img src="bird.jpg?mark=logo.svg&markw=200&markh=200&markfit=crop">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markh=50&markfit=crop&markpad=3w&markpos=bottom-right)](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)
+[![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markh=50&markfit=crop&markpad=3w&markpos=bottom-right)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)
 
 ## `markh` - Watermark height
 
@@ -370,7 +370,7 @@ Sets watermark height in pixels or [relative dimensions](#relative-dimensions).
 <img src="bird.jpg?mark=logo.svg&markh=200">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)
+[![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)
 
 ## `markorigin` - Watermark image origin
 
@@ -408,7 +408,7 @@ Named positions also work. Options: `top-left`, `top`, `top-right`, `left`, `cen
 <img src="bird.jpg?mark=logo.svg&markpos=top-left">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=10w&markpad=3w&markpos=top-left)](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=10w&markpad=3w&markpos=top-left)
+[![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=10w&markpad=3w&markpos=top-left)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=10w&markpad=3w&markpos=top-left)
 
 ## `markw` - Watermark width
 
@@ -418,7 +418,7 @@ Sets watermark width in pixels or [relative dimensions](#relative-dimensions).
 <img src="bird.jpg?mark=logo.svg&markw=200">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markpad=3w&markpos=bottom-right)](https://demo.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markpad=3w&markpos=bottom-right)
+[![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markpad=3w&markpos=bottom-right)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markpad=3w&markpos=bottom-right)
 
 ## `markx` - Watermark X-offset
 
@@ -436,7 +436,7 @@ Rotates the image. Accepts: `auto`, `0`, `90`, `180`, `270`. Default: `auto` (us
 <img src="bird.jpg?h=500&or=90">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?h=500&or=90)](https://demo.smallpics.io/bird.jpg?h=500&or=90)
+[![](https://media.smallpics.io/bird.jpg?h=500&or=90)](https://media.smallpics.io/bird.jpg?h=500&or=90)
 
 ## `q` - Quality
 
@@ -446,7 +446,7 @@ Sets output quality (0–100). Default: `90`. Applies to `jpg`, `pjpg`, `webp` a
 <img src="bird.jpg?w=500&q=25">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&q=25)](https://demo.smallpics.io/bird.jpg?w=500&q=25)
+[![](https://media.smallpics.io/bird.jpg?w=500&q=25)](https://media.smallpics.io/bird.jpg?w=500&q=25)
 
 ## `sharp` - Sharpen
 
@@ -456,7 +456,7 @@ Increases sharpness between `0` and `100`.
 <img src="bird.jpg?w=500&sharp=15">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&sharp=15)](https://demo.smallpics.io/bird.jpg?w=500&sharp=15)
+[![](https://media.smallpics.io/bird.jpg?w=500&sharp=15)](https://media.smallpics.io/bird.jpg?w=500&sharp=15)
 
 ## `w` - Width
 
@@ -466,7 +466,7 @@ Sets image width in pixels or [relative dimensions](#relative-dimensions). `w=65
 <img src="bird.jpg?w=500">
 ```
 
-[![](https://demo.smallpics.io/bird.jpg?w=500)](https://demo.smallpics.io/bird.jpg?w=500)
+[![](https://media.smallpics.io/bird.jpg?w=500)](https://media.smallpics.io/bird.jpg?w=500)
 
 ## `zoom` - Zoom
 
@@ -483,18 +483,18 @@ Use [face](#face---face-index) to select a face. When matching faces are found, 
 Add a numeric fallback with `zoom=face,2.5` or `zoom=facesarea,2.5`. It applies when no matching face is found and uses the normal crop position or focal point. Without a fallback, the image uses its `fit` and position without extra zoom.
 
 ```html
-<img src="https://demo.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800">
+<img src="https://media.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800">
 ```
 
-[![](https://demo.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800)](https://demo.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800)
+[![](https://media.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800)](https://media.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800)
 
 Numeric zoom also works without face detection:
 
 ```html
-<img src="https://demo.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=2.5">
+<img src="https://media.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=2.5">
 ```
 
-[![](https://demo.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=2.5)](https://demo.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=2.5)
+[![](https://media.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=2.5)](https://media.smallpics.io/street-portrait.jpg?fit=crop&h=800&w=800&zoom=2.5)
 
 ### Frame all faces
 
@@ -505,10 +505,10 @@ If all faces cannot fit, the crop centers on the box around them and fills the r
 For example, faces in both bottom corners of a 1200×400 source produce the middle 400×400 crop when 400×400 is requested.
 
 ```html
-<img src="https://demo.smallpics.io/group-of-people.jpg?w=600&h=250&zoom=facesarea&zoompad=2p">
+<img src="https://media.smallpics.io/group-of-people.jpg?w=600&h=250&zoom=facesarea&zoompad=2p">
 ```
 
-[![](https://demo.smallpics.io/group-of-people.jpg?w=600&h=250&zoom=facesarea&zoompad=2p)](https://demo.smallpics.io/group-of-people.jpg?w=600&h=250&zoom=facesarea&zoompad=2p)
+[![](https://media.smallpics.io/group-of-people.jpg?w=600&h=250&zoom=facesarea&zoompad=2p)](https://media.smallpics.io/group-of-people.jpg?w=600&h=250&zoom=facesarea&zoompad=2p)
 
 ## `zoompad` - Zoom padding
 
@@ -528,10 +528,10 @@ Relative values use the output width and height after resizing, DPR, and the siz
 Percentages accept `0` to `100`. Padding stops at the source edges and keeps the requested output size and shape.
 
 ```html
-<img src="https://demo.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800">
+<img src="https://media.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800">
 ```
 
-[![](https://demo.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800)](https://demo.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800)
+[![](https://media.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800)](https://media.smallpics.io/street-portrait.jpg?zoom=face&zoompad=6p&h=800&w=800)
 
 # Relative dimensions
 
@@ -547,7 +547,7 @@ Relative values range from `0` to `100`. Use explicit `w` or `h` units when both
 <img src="bird.jpg?w=500&border=10h,ff4d4d,overlay">
 ~~~
 
-[![](https://demo.smallpics.io/bird.jpg?w=500&border=10h,ff4d4d,overlay)](https://demo.smallpics.io/bird.jpg?w=500&border=10h,ff4d4d,overlay)
+[![](https://media.smallpics.io/bird.jpg?w=500&border=10h,ff4d4d,overlay)](https://media.smallpics.io/bird.jpg?w=500&border=10h,ff4d4d,overlay)
 
 # Colors
 
