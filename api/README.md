@@ -295,7 +295,7 @@ Adjusts gamma levels between `0.1` and `9.99`.
 
 ## `h` - Height
 
-Defines image height in pixels.
+Sets image height in pixels or [relative dimensions](#relative-dimensions). `h=65p` uses 65% of the source height after orientation and rectangle cropping, before resizing and DPR. If `w` is omitted, width follows the aspect ratio.
 
 ```html
 <img src="bird.jpg?h=500">
@@ -460,7 +460,7 @@ Increases sharpness between `0` and `100`.
 
 ## `w` - Width
 
-Defines image width in pixels.
+Sets image width in pixels or [relative dimensions](#relative-dimensions). `w=65p` uses 65% of the source width after orientation and rectangle cropping, before resizing and DPR. If `h` is omitted, height follows the aspect ratio.
 
 ```html
 <img src="bird.jpg?w=500">
@@ -537,7 +537,9 @@ Percentages accept `0` to `100`. Padding stops at the source edges and keeps the
 
 Use `w` for a percentage of image width, `h` for height, or `p` for the relevant axis. For example, `10p` means `10w` for x or width values and `10h` for y or height values.
 
-This applies to `fp`, watermark dimensions and offsets, `markpad`, `zoompad`, and borders. Shared values resolve each axis separately: `markpad=10p` sets x padding to 10% of the width and y padding to 10% of the height. For borders, left and right thickness use width; top and bottom use height.
+This applies to `w`, `h`, `fp`, watermark dimensions and offsets, `markpad`, `zoompad`, and borders. Shared values resolve each axis separately: `markpad=10p` sets x padding to 10% of the width and y padding to 10% of the height. For borders, left and right thickness use width; top and bottom use height.
+
+For `w` and `h`, relative values use the source dimensions after orientation and rectangle cropping. Resolved sizes are rounded to whole pixels; zero sizes are ignored. Animations use each frame’s dimensions.
 
 Relative values range from `0` to `100`. Use explicit `w` or `h` units when both axes should use the same dimension. For example, when adding a border.
 

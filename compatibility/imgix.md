@@ -20,7 +20,7 @@ Enable the Imgix compatibility for any of your configured image origins which mi
 | `flip`       | `flip`      | ✅         | `hv` in Imgix is mapped to `both` in Small Pics                                          |
 | `fm`         | `fm`        | 🟠        | Small Pics supports: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif`, `jxl`.                  |
 | `gam`        | `gam`       | ✅         | See gamma value mapping below.                                                           |
-| `h`          | `h`         | 🟠        | Small Pics doesn't yet have support for relative sizes.                                  |
+| `h`          | `h`         | 🟢        | Pixels pass through. Fractions map to percentages: `h=0.5` → `h=50p`.                                  |
 | `mark`       | `mark`      | 🟠        | Small Pics only supports relative URLs. Images can be in different origins.              |
 | `mark-alpha` | `markalpha` | ✅         |                                                                                          |
 | `mark-pad`   | `markpad`   | ✅         | Imgix defaults to 5px.                                                                   |
@@ -33,7 +33,7 @@ Enable the Imgix compatibility for any of your configured image origins which mi
 | `orient`     | `or`        | ✅         | Imgix uses EXIF values or degrees. See mapping below.                                    |
 | `q`          | `q`         | ✅         |                                                                                          |
 | `sharp`      | `sharp`     | ✅         |                                                                                          |
-| `w`          | `w`         | 🟠        | Small Pics doesn't yet have support for relative sizes.                                  |
+| `w`          | `w`         | 🟢        | Pixels pass through. Fractions map to percentages: `w=0.65` → `w=65p`.                                  |
 
 ---
 
