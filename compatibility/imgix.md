@@ -95,7 +95,7 @@ If the group cannot fit, the crop centers on the box around all faces. Some face
 
 Face detection and ordering can differ from Imgix. `faceindex` only applies to `facearea` and uses the native [face index](../api/README.md#face---face-index) rules. Empty or invalid values select the first face; leaving it out selects the group.
 
-`facepad` is unsupported and ignored. Native [zoompad](../api/README.md#zoompad---zoom-padding) accepts pixels or source-relative values.
+`facepad` is unsupported and ignored. Its multiplier does not map directly to [zoompad](../api/README.md#zoompad---zoom-padding), which uses pixels or percentages of the output dimensions.
 
 ### `markfit` values
 

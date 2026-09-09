@@ -518,12 +518,12 @@ Use `zoompad=x:y`, or one value for both axes. `zoompad=10:20` adds 10 pixels on
 
 Values use the same syntax as [markpad](#markpad---watermark-padding): pixels or [relative dimensions](#relative-dimensions). Decimals are also pixels. Default: `0`, which adds no padding.
 
-* `zoompad=10`: adds 10 source pixels on each side.
-* `zoompad=10w`: adds 10% of the source image width on each side.
-* `zoompad=10h`: adds 10% of the source image height on each side.
-* `zoompad=10p`: adds 10% of the source width horizontally and 10% of its height vertically.
+* `zoompad=10`: adds 10 output pixels on each side.
+* `zoompad=10w`: adds 10% of the output image width on each side.
+* `zoompad=10h`: adds 10% of the output image height on each side.
+* `zoompad=10p`: adds 10% of the output width horizontally and 10% of its height vertically.
 
-Source width and height are measured after orientation, flip, and crop, before resizing or DPR scaling.
+Relative values use the output width and height after resizing, DPR, and the size limit, before borders. Pixel values scale with `dpr`, just like `markpad`.
 
 Percentages accept `0` to `100`. Padding stops at the source edges and keeps the requested output size and shape.
 
