@@ -378,9 +378,9 @@ Sets watermark height in pixels or [relative dimensions](#relative-dimensions).
 
 [![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)
 
-## `markorigin` - Watermark image origin
+## `markorigin` - Watermark image source
 
-Specifies the image origin for the watermark. If not set, the current origin is used.
+Specifies the image source for the watermark. If not set, the current source is used.
 
 ## `markpad` - Watermark padding
 

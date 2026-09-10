@@ -1,12 +1,14 @@
 # Imgix Compatibility
 
-Enable the Imgix compatibility for any of your configured image origins which might require Imgix parameters.
+Parameter mappings for moving Imgix image URLs to Small Pics. 
+
+Enable the Imgix compatibility for any of your configured image sources which might require Imgix parameters.
 
 ## Parameter Compatibility
 
 | Imgix        | Small Pics  | Supported | Notes                                                                                    |
 |--------------|-------------|-----------|------------------------------------------------------------------------------------------|
-| `ar`         | `ar`        | ✅         | Accepts `width:height` or decimal ratios, for example `16:9` or `3.1667`.                 |
+| `ar`         | `ar`        | ✅         | Accepts `width:height` or decimal ratios, for example `16:9` or `3.1667`.                |
 | `bg`         | `bg`        | ✅         |                                                                                          |
 | `border`     | `border`    | ✅         |                                                                                          |
 | `pad`        | `border`    | ✅         | Maps to `border=<pad>,<bg>,shrink`. If bg isn't set, then the background is transparent. |
@@ -14,26 +16,26 @@ Enable the Imgix compatibility for any of your configured image origins which mi
 | `con`        | `con`       | ✅         |                                                                                          |
 | `crop`       | `fit`, `crop`       | 🟠        | See mapping table below.                                                                 |
 | `dpr`        | `dpr`       | ✅         | Small Pics max is 8, Imgix max is 5.                                                     |
-| `faceindex`  | `face`      | 🟠        | With `fit=facearea`. Accepts positive face numbers; ordering may differ from Imgix. |
-| `facepad`    | —          | 🔴        | Unsupported. |
+| `faceindex`  | `face`      | 🟠        | With `fit=facearea`. Accepts positive face numbers; ordering may differ from Imgix.      |
+| `facepad`    | —          | 🔴        | Unsupported.                                                                             |
 | `fit`        | `fit`       | ✅         | See mapping table below.                                                                 |
 | `flip`       | `flip`      | ✅         | `hv` in Imgix is mapped to `both` in Small Pics                                          |
-| `fm`         | `fm`        | 🟠        | Small Pics supports: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif`, `jxl`.                  |
+| `fm`         | `fm`        | 🟠        | Small Pics supports: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif`, `jxl`.                 |
 | `gam`        | `gam`       | ✅         | See gamma value mapping below.                                                           |
-| `h`          | `h`         | 🟢        | Pixels pass through. Fractions map to percentages: `h=0.5` → `h=50p`.                                  |
-| `mark`       | `mark`      | 🟠        | Small Pics only supports relative URLs. Images can be in different origins.              |
+| `h`          | `h`         | 🟢        | Pixels pass through. Fractions map to percentages: `h=0.5` → `h=50p`.                    |
+| `mark`       | `mark`      | 🟠        | Small Pics only supports relative URLs. Images can be in different sources.              |
 | `mark-alpha` | `markalpha` | ✅         |                                                                                          |
 | `mark-pad`   | `markpad`   | ✅         | Imgix defaults to 5px.                                                                   |
 | `mark-align` | `markpos`   | ✅         | Comma-separated positioning. Both default to bottom-right. See mapping below.            |
 | `mark-h`     | `markh`     | ✅         | Relative positioning maps to `<value>h`, for example `0.1` becomes `10h`.                |
 | `mark-w`     | `markw`     | ✅         | Relative positioning maps to `<value>w`, for example `0.1` becomes `10w`.                |
-| `mark-x`     | `markpad`, `markpos` | ✅ | Sets x from the left edge. Relative values map to `w`, for example `0.1` becomes `10w`. |
-| `mark-y`     | `markpad`, `markpos` | ✅ | Sets y from the top edge. Relative values map to `h`, for example `0.1` becomes `10h`. |
+| `mark-x`     | `markpad`, `markpos` | ✅ | Sets x from the left edge. Relative values map to `w`, for example `0.1` becomes `10w`.  |
+| `mark-y`     | `markpad`, `markpos` | ✅ | Sets y from the top edge. Relative values map to `h`, for example `0.1` becomes `10h`.   |
 | `mark-fit`   | `markfit`   | ✅         | See mapping table below.                                                                 |
 | `orient`     | `or`        | ✅         | Imgix uses EXIF values or degrees. See mapping below.                                    |
 | `q`          | `q`         | ✅         |                                                                                          |
 | `sharp`      | `sharp`     | ✅         |                                                                                          |
-| `w`          | `w`         | 🟢        | Pixels pass through. Fractions map to percentages: `w=0.65` → `w=65p`.                                  |
+| `w`          | `w`         | 🟢        | Pixels pass through. Fractions map to percentages: `w=0.65` → `w=65p`.                   |
 
 ---
 
