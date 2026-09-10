@@ -1,5 +1,11 @@
 # API
 
+## Compatibility
+
+Small Pics provides API compatibility options for the following services:
+
+- [Imgix](compatibility/imgix.md)
+
 ## `signature`/`s` - Transform signature
 
 An optional hash used to verify that the transform URL hasn’t been modified.
