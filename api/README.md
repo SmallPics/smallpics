@@ -551,48 +551,22 @@ Relative values range from `0` to `100`. Use explicit `w` or `h` units when both
 
 These examples show how the border thickness is based on the output size.
 
-<div class="docs-example-grid">
-<div>
+_Using a value relative to an axis will make the border thickness equal on all sides, based off the output axis size:_
 
-~~~ html
-<img src="https://…/bird.jpg?w=500&border=5h,ff4d4d,overlay">
-~~~
+<div class="docs-example-grid">
 
 [![Bird with a relative border](https://media.smallpics.io/bird.jpg?w=500&border=5h,ff4d4d,overlay)](https://media.smallpics.io/bird.jpg?w=500&border=5h,ff4d4d,overlay)
-
-</div>
-<div>
-
-~~~ html
-<img src="https://…/street-portrait.jpg?w=500&border=10w,ff4d4d,overlay">
-~~~
-
 [![Rock with a relative border](https://media.smallpics.io/street-portrait.jpg?w=500&border=5h,ff4d4d,overlay)](https://media.smallpics.io/rock.png?w=500&border=5h,ff4d4d,overlay)
 
 </div>
-</div>
 
-Using a percentage value will add a border thickness based on each axis:
+_Using a percentage value will add a border thickness based on each axis:_
 
 <div class="docs-example-grid">
-<div>
-
-~~~ html
-<img src="https://…/bird.jpg?w=500&border=10p,ff4d4d,overlay">
-~~~
 
 [![Bird with a relative border](https://media.smallpics.io/bird.jpg?w=500&border=5p,ff4d4d,overlay)](https://media.smallpics.io/bird.jpg?w=500&border=5p,ff4d4d,overlay)
-
-</div>
-<div>
-
-~~~ html
-<img src="https://…/street-portrait.jpg?w=500&border=5p,ff4d4d,overlay">
-~~~
-
 [![Rock with a relative border](https://media.smallpics.io/street-portrait.jpg?w=500&border=5p,ff4d4d,overlay)](https://media.smallpics.io/rock.png?w=500&border=5p,ff4d4d,overlay)
 
-</div>
 </div>
 
 # Colors
