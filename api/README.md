@@ -444,6 +444,10 @@ Rotates the image. Accepts: `auto`, `0`, `90`, `180`, `270`. Default: `auto` (us
 
 [![](https://media.smallpics.io/bird.jpg?h=500&or=90)](https://media.smallpics.io/bird.jpg?h=500&or=90)
 
+## `passthrough` - Proxy source
+
+Add `passthrough` to return the original image if the source is an SVG, ignoring all transforms.
+
 ## `q` - Quality
 
 Sets output quality (0–100). Default: `90`. Applies to `jpg`, `pjpg`, `webp` and `avif`.
