@@ -576,9 +576,13 @@ Color values can be provided in several formats.
 ## Hexadecimal
 
 * 3-digit RGB: `ccc`
-* 4-digit ARGB: `5ccc`
+* 4-character alpha + RGB: `5ccc` (50% opacity)
 * 6-digit RGB: `cccccc`
-* 8-digit ARGB: `55cccccc`
+* 8-character alpha + RGB: `55cccccc` (55% opacity)
+
+When setting colors that support alpha, the alpha prefix is **decimal**, while the RGB color is **hexadecimal**. A one-digit alpha prefix accepts `0`–`9` (0%–90% opacity); a two-digit prefix accepts `00`–`99` (0%–99%). `00` is fully transparent.
+
+For **100% opacity, omit the alpha prefix** and use a 3- or 6-digit RGB color. For example, `50ff4d4d` is 50% opaque, `99ff4d4d` is 99% opaque, and `ff4d4d` is fully opaque.
 
 ## Color names
 
