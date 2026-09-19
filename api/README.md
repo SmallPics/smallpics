@@ -370,6 +370,20 @@ Defines how the watermark scales to its size constraints.
 
 [![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markh=50&markfit=crop&markpad=3w&markpos=bottom-right)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markh=75&markpad=3w&markpos=bottom-right)
 
+## `markfp` - Watermark focal point
+
+Sets the crop point within the watermark. Use `markfit=crop` with both `markw` and `markh`, or numeric [markzoom](#markzoom---watermark-zoom).
+
+Uses the same syntax as [fp](#fp---focal-point): `x:y`, or one value for both axes. `markfp=20p:20p` means 20% across and down from the watermark's top-left corner.
+
+Coordinates use the watermark after orientation, before resizing. Pixel coordinates do not scale with `dpr`. Use `markpos` to place the watermark on the main image.
+
+```html
+<img src="https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markh=50&markfit=crop&markfp=20p:20p&markpos=center">
+```
+
+[![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markh=50&markfit=crop&markfp=20p:20p&markpos=center)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=100&markh=50&markfit=crop&markfp=20p:20p&markpos=center)
+
 ## `markh` - Watermark height
 
 Sets watermark height in pixels or [relative dimensions](#relative-dimensions).
@@ -435,6 +449,20 @@ _Deprecated_. Use markpos instead, or combination of markpos and markpad.
 ## `marky` - Watermark Y-offset
 
 _Deprecated_. Use markpos instead, or combination of markpos and markpad.
+
+## `markzoom` - Watermark zoom
+
+Zooms into the watermark around [markfp](#markfp---watermark-focal-point), or its crop anchor/center by default.
+
+Accepts `1` to `100`, including decimals. `1` uses the normal cover crop; `2` doubles the scale before cropping. It forces a crop regardless of `markfit`. Invalid values are ignored.
+
+`markw` and `markh` set the output size. With one dimension, the other follows the watermark's aspect ratio. With neither, it uses the watermark's dimensions. Pixel dimensions scale with `dpr`.
+
+```html
+<img src="https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=80&markh=80&markfit=crop&markfp=20p:20p&markzoom=2&markpos=center">
+```
+
+[![](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=80&markh=80&markfit=crop&markfp=20p:20p&markzoom=2&markpos=center)](https://media.smallpics.io/bird.jpg?w=500&mark=logo.svg&markw=80&markh=80&markfit=crop&markfp=20p:20p&markzoom=2&markpos=center)
 
 ## `or` - Orientation
 
@@ -549,7 +577,7 @@ Percentages accept `0` to `100`. Padding stops at the source edges and keeps the
 
 Use `w` for a percentage of image width, `h` for height, or `p` for the relevant axis. For example, `10p` means `10w` for x or width values and `10h` for y or height values.
 
-This applies to `w`, `h`, `fp`, watermark dimensions and offsets, `markpad`, `zoompad`, and borders. Shared values resolve each axis separately: `markpad=10p` sets x padding to 10% of the width and y padding to 10% of the height. For borders, left and right thickness use width; top and bottom use height.
+This applies to `w`, `h`, `fp`, `markfp`, watermark dimensions and offsets, `markpad`, `zoompad`, and borders. Shared values resolve each axis separately: `markpad=10p` sets x padding to 10% of the width and y padding to 10% of the height. For borders, left and right thickness use width; top and bottom use height.
 
 For `w` and `h`, relative values use the source dimensions after orientation and rectangle cropping. Resolved sizes are rounded to whole pixels; zero sizes are ignored. Animations use each frame’s dimensions.
 
