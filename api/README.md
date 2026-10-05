@@ -106,6 +106,18 @@ If `fp` is set, it overrides the named position.
 
 `fit=crop-top-left`, `fit=crop-top`, and the other named fit positions are deprecated. Use `fit=crop` with the `crop` parameter instead, `fit=crop&crop=top`.
 
+### Entropy
+
+Use `fit=crop&crop=entropy` to keep areas with more visual detail.
+
+An explicit [fp](#fp---focal-point) overrides entropy cropping. Numeric [zoom](#zoom---zoom) and [zoompad](#zoompad---zoom-padding) are supported. Face-based zoom takes priority when matching faces are found.
+
+For animations, the first frame determines the crop position used for every frame.
+
+```html
+<img src="https://media.smallpics.io/bird.jpg?w=500&h=500&fit=crop&crop=entropy">
+```
+
 ### Face position
 
 Use `fit=crop&crop=face` to center the crop on the selected face. It does not set the zoom level.
