@@ -271,9 +271,11 @@ Flips the image vertically (`v`), horizontally (`h`), or `both`.
 
 ## `fm` - Format
 
-Forces output to a specific format: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif` or `jxl`.
+Sets the output format: `strict` (default), `auto`, `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif` or `jxl`.
 
-When `fm` is omitted, output defaults to `avif`. GIF inputs default to `webp` instead, which supports animation.
+`strict` preserves the source format when the `Accept` header is missing or uses a catch-all (`*/*` or `image/*`). With a specific image format in `Accept`, it selects a supported format from that header.
+
+`auto` selects a supported format from `Accept`, falling back to `avif`. GIF inputs use `webp` in automatic mode, which supports animation. A specific `fm` value forces that format.
 
 ```html
 <img src="https://media.smallpics.io/bird.jpg?w=500&fm=gif">

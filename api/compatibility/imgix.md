@@ -20,7 +20,7 @@ Enable the Imgix compatibility for any of your configured image sources which mi
 | `facepad`    | —          | 🔴        | Unsupported.                                                                             |
 | `fit`        | `fit`       | ✅         | See mapping table below.                                                                 |
 | `flip`       | `flip`      | ✅         | `hv` in Imgix is mapped to `both` in Small Pics                                          |
-| `fm`         | `fm`        | 🟠        | Small Pics supports: `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif`, `jxl`.                 |
+| `fm`         | `fm`        | 🟠        | Small Pics supports: `strict`, `auto`, `avif`, `webp`, `jpg`, `pjpg`, `png`, `gif`, `jxl`. |
 | `gam`        | `gam`       | ✅         | See gamma value mapping below.                                                           |
 | `h`          | `h`         | 🟢        | Pixels pass through. Fractions map to percentages: `h=0.5` → `h=50p`.                    |
 | `mark`       | `mark`      | 🟠        | Small Pics only supports relative URLs. Images can be in different sources.              |
