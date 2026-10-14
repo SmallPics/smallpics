@@ -535,7 +535,7 @@ Sets the maximum mean color difference from the outermost edge for `trim=auto`. 
 
 ## `trim-pad` - Trim padding
 
-Retains source pixels around a `trim=auto` or `trim=color` crop, up to the original image edges. Accepts a nonnegative integer. Default: `0`.
+Retains padding around the crop in every trim mode, up to the original image edges. Accepts pixels or [relative dimensions](#relative-dimensions), measured before trimming. Default: `0`.
 
 ## `trim-sd` - Trim standard deviation
 
