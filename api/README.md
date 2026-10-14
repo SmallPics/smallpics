@@ -52,7 +52,7 @@ Specifies border thickness in pixels or using [relative dimensions](#relative-di
 
 ### Color
 
-Defines the border color. See [colors](#colors) for supported values.
+Defines the border color, including opacity and transparency. See [colors](#colors) for supported values.
 
 ### Method
 
@@ -509,6 +509,41 @@ Increases sharpness between `0` and `100`.
 ```
 
 [![](https://media.smallpics.io/bird.jpg?w=500&sharp=15)](https://media.smallpics.io/bird.jpg?w=500&sharp=15)
+
+## `trim` - Trim image edges
+
+Removes uniform edges before resizing. Accepts:
+
+* `auto`: Detects the border color automatically.
+* `color`: Removes transparent edges, then trims a selected color.
+* `alpha`: Trims transparent edges.
+* `either`: Trims transparency if an alpha channel exists, otherwise a color.
+
+The other trim parameters require a valid `trim` mode.
+
+## `trim-alpha` - Trim alpha
+
+Sets the alpha threshold for `trim=alpha`. Pixels at or below `trim-alpha + trim-tol` are trimmed. Accepts `0` to `255`. Default: `0`.
+
+## `trim-color` - Trim color
+
+Sets the color to remove with `trim=color`, or with `trim=either` when there is no alpha channel. Accepts named colors or 3- or 6-digit RGB hex. Defaults to the top-left pixel after transparency trimming.
+
+## `trim-md` - Trim mean difference
+
+Sets the maximum mean color difference from the outermost edge for `trim=auto`. Accepts `0` to `255`. Default: `11`.
+
+## `trim-pad` - Trim padding
+
+Retains source pixels around a `trim=auto` or `trim=color` crop, up to the original image edges. Accepts a nonnegative integer. Default: `0`.
+
+## `trim-sd` - Trim standard deviation
+
+Sets the maximum color variation within an edge row or column for `trim=auto`. Accepts `0` to `255`. Default: `10`.
+
+## `trim-tol` - Trim tolerance
+
+Sets the allowed color difference for `trim=color` and color trimming with `trim=either`, or adds to the alpha threshold for `trim=alpha`. Accepts `0` to `255`. Default: `0`.
 
 ## `w` - Width
 

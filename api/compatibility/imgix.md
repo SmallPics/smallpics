@@ -35,6 +35,13 @@ Enable the Imgix compatibility for any of your configured image sources which mi
 | `orient`     | `or`        | ✅         | Imgix uses EXIF values or degrees. See mapping below.                                    |
 | `q`          | `q`         | ✅         |                                                                                          |
 | `sharp`      | `sharp`     | ✅         |                                                                                          |
+| `trim`       | `trim`      | ✅        | Maps `colorunlesalpha` to `either`. |
+| `trim-color` | `trim-color` | ✅       | Named colors or standard 3- or 6-digit RGB hex. |
+| `trim-alpha` | `trim-alpha` | ✅       | Translates the alpha threshold to preserve trimming below the supplied value. |
+| `trim-tol`   | `trim-tol`   | ✅       |                                                                                          |
+| `trim-md`    | `trim-md`    | ✅       |                                                                                          |
+| `trim-sd`    | `trim-sd`    | ✅       |                                                                                          |
+| `trim-pad`   | `trim-pad`   | 🟠       | Padding is limited to the original image edges. |
 | `w`          | `w`         | 🟢        | Pixels pass through. Fractions map to percentages: `w=0.65` → `w=65p`.                   |
 
 ---
